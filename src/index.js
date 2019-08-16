@@ -22,6 +22,7 @@ import { PersistGate } from "redux-persist/integration/react";
 
 const history = createBrowserHistory();
 
+Axios.defaults.baseURL = '/api';   //配置接口地址
 //  REQUEST 请求异常拦截
 Axios.interceptors.request.use(config => {
     //==========  所有请求之前都要执行的操作  ==============
